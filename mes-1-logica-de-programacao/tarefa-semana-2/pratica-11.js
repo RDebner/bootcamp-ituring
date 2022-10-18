@@ -1,5 +1,4 @@
 function cores (cor) {
-    cor = "verde"
     switch (cor) {
         case "vermelha":
             console.log("O RGB da cor vermelha é rgb(255,0,0)")
@@ -27,4 +26,4 @@ function cores (cor) {
     }
 
 }
-cores()
+cores(cor = "azul claro")
