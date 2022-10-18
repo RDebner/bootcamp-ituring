@@ -3,7 +3,7 @@ function oláMundo (idioma) {
     ingles = "Hello World!"
     portugues = "Olá Mundo!"
     let idiomanãoinformado = "idioma não informado"
-    idioma = ingles
+    idioma = idiomanãoinformado
     if (idioma == portugues) {
         console.log(portugues)
     } else if (idioma == ingles) {
@@ -11,7 +11,7 @@ function oláMundo (idioma) {
     } else if (idioma == espanhol) {
         console.log(espanhol)
     } else {
-        console.log("abcd")
+        console.log("Olá Mundo.")
     }
 
 }
