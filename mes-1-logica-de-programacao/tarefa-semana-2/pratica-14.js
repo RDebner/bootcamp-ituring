@@ -16,3 +16,4 @@ function imc (peso){
     }
 }
 imc(peso = 70)
+ 
