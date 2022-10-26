@@ -3,5 +3,5 @@ function séries (listaSéries) {
         console.log(`[${i}] ${listaSéries[i]}`)
 }
 
-const listaSéries = ["Breaking Bad", "Game of Thrones", "Stranger Things", "Chernobyl", "Dexter", "The Last Dance", "This is Us"]
+let listaSéries = ["Breaking Bad", "Game of Thrones", "Stranger Things", "Chernobyl", "Dexter", "The Last Dance", "This is Us"]
 séries(listaSéries)
