@@ -2,9 +2,9 @@ function ordenaNumeros (listaNumeros) {
     for (let i = 0; i < listaNumeros.length; i++) {
         let indiceMenorAtual = i
 
-        for (let j = i+1; j < listaNumeros.length; j++)
-            if (listaNumeros[j] < listaNumeros[indiceMenorAtual]) {
-                indiceMenorAtual = j
+        for (let r = i+1; r < listaNumeros.length; r++)
+            if (listaNumeros[r] < listaNumeros[indiceMenorAtual]) {
+                indiceMenorAtual = r
             }
         const aux = listaNumeros[i]
         listaNumeros[i] = listaNumeros[indiceMenorAtual]
