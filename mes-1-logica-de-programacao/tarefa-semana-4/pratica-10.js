@@ -39,16 +39,16 @@ let lista = [{
     for (item of lista)
     if (item.movimentacao === "deposito"){
         valorFinal += item.valor
-    }
-    if (item.movimentacao === "retirada"){
+    }else if (item.movimentacao === "retirada"){
         valorFinal -= item.valor
     }
 
-    function positivoOuNegativo (valorFinal){
-       positivoNegativo = valorFinal >= 0 ? "positivo" : "negativo"
-       return positivoNegativo
-   }
-   console.log(`O saldo final de sua conta foi positivo no valor de R$ 27.`)
+    function positivoOuNegativo(){
+      return  valorFinal > 0 ? "positivo" : "negativo"  
+    }
+    positivoNegativo = positivoOuNegativo(valorFinal)
+  
+   console.log(`O saldo final de sua conta foi ${positivoNegativo} no valor de R$ ${valorFinal}.`)
 }
 
    
