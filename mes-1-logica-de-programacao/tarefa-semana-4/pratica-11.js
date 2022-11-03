@@ -42,19 +42,19 @@ let lista = [{
     if (item.movimentacao === "deposito"){
         valorFinal += item.valor
         valorDeposito += item.valor
-    }
-    if (item.movimentacao === "retirada"){
+    }else if (item.movimentacao === "retirada"){
         valorFinal -= item.valor
         valorRetirada += item.valor
     }
 
-    function positivoOuNegativo (valorFinal){
-       positivoNegativo = valorFinal >= 0 ? "positivo" : "negativo"
-       return positivoNegativo
-   }
+    function positivoOuNegativo (){
+     return valorFinal > 0 ? "positivo" : "negativo"
+     }
+    
+    positivoNegativo = positivoOuNegativo(valorFinal)
    console.log(`O valor total depositado foi de: R$ ${valorDeposito}`)
    console.log(`O valor total retirado foi de: R$ ${valorRetirada}`)
-   console.log(`O saldo final de sua conta foi positivo no valor de R$ 27.`)
+   console.log(`O saldo final de sua conta foi ${positivoNegativo} no valor de R$ ${valorFinal}.`)
 }
 
    
