@@ -20,7 +20,7 @@ let listaFilmes = [{
     categoria: "Animação"
   }]
 
-  function exibirFilmeMaiorNota () {
+  function exibirFilmeMaiorNota (listaFilmes) {
     let maiorNota 
     let filmeComMaiorNota
     for(let i = 0;i < listaFilmes.length ; i++) 
